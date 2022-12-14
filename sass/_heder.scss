@@ -1,0 +1,127 @@
+.header{
+    display:flex;
+
+    border-bottom: 1px solid #ECECEC;
+  }
+  .header-logo{  
+    display: block;
+  
+  font-family: 'Raleway';
+  padding-top: 24px;
+  padding-bottom: 25px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: #000000;
+  margin-right: 93px;
+  
+  }
+  .span-logo{
+      color: #2196F3;
+  }
+  
+  .header-list{
+    display: flex;
+  
+  }
+  .nav-li{
+    display: flex;
+    margin-left: auto;
+   align-items: center;
+  }
+  
+  .header-list-item{
+  font-weight: 500;
+  line-height: 1.14; 
+  letter-spacing: 0.02em;
+  color: var(--color-primary);
+  transition: color var(--sec) var(--cubic);
+  }
+  
+  .header-list-item:focus, .header-list-item:hover{
+      color: var(--color-accent);
+  } 
+  .header-li{
+    position: relative;
+    /* color: var(--color-primary); */
+     margin-right: 50px;
+     padding-top: 32px;
+  padding-bottom: 32px;
+  /* transition: color, 800ms, cubic-bezier(0.075, 0.82, 0.165, 1); */
+  }
+  /* .header-li:focus, .header-li:hover {
+    color: red;
+  } */
+  .header-li:nth-child(3){
+     margin-right: 0;
+  }
+  .header-contact-li{
+    margin-right: 30px;
+  }
+  .header-contact-li:nth-last-child(1){
+    margin-right: 0;
+  }
+  .nav{
+    /* display: inline-block; */
+    display: flex;
+   align-items: center;
+   /* padding: 25px; */
+   margin: 0;
+  
+  }
+  .header-contact{
+    display:flex;
+   margin-left: auto;
+   align-items: center;
+   align-content: center;
+  
+  
+  }
+  .header-contact-list {
+    display: flex;
+   font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  align-items: center;
+  /* align-content: center; */
+  /* padding-top: 32px;
+  padding-bottom: 32px; */
+  /* align-content: center; */
+  fill: var(--color-secondary);
+  color: var(--color-secondary);
+  transition: color var(--sec) var(--cubic), fill var(--sec) var(--cubic);
+  }
+  .header-contac-list:focus, .header-contact-list:hover{
+     color: var(--color-accent); 
+     fill: #2196F3;
+  }
+  .active-link{
+    color: var(--color-accent);
+  }
+  .active-link::before {
+      display: block;
+    content: "";
+    color: var(--color-accent);
+  
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: #2196F3;
+    border-radius: 2px;
+  bottom: 0;
+  left: 0;
+  
+  }
+  .header-link-icon{
+   margin-right: 10px;
+  } 
+  
+  .header-contact-li{
+    /* outline: 1px red solid; */
+    display: flex;
+    margin-left: 10px;
+    /* text-align: center; */
+    /* align-content: flex-end;
+   
+    align-items: center; */
+  }
