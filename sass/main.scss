@@ -1,2 +1,22 @@
-@import './variables.scss';
-@import './heder';
+@import './utils/variable';
+@import './base/reset';
+@import './component/container';
+@import './layouts/heder';
+@import './layouts/hero';
+@import './layouts/feature';
+@import './layouts/job';
+@import './component/social_icon';
+@import './layouts/teams';
+@import './layouts/clients';
+@import './layouts/footer/footer-sendmail';
+@import './layouts/footer/footer-icon';
+@import './layouts/footer/footer-contact';
+@import './layouts/footer/footer';
+@import './modal/backdrop';
+@import './modal/modal-form';
+@import './layouts/portfolio/portfolio';
+@import './layouts/portfolio/portfolio-filter';
+@import './layouts/portfolio/portfolio-cards';
+
+
+

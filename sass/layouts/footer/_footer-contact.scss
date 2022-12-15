@@ -1,0 +1,24 @@
+.footer-li:not(:last-child){
+    margin-bottom: 12px;
+    /* outline: 2px red solid; */
+  }
+  .footer-li:last-child{
+    margin-bottom: 60px;
+  } 
+  
+  .footer-adress{
+  font-style: normal; 
+  line-height: 1.71;
+  color: var(--color-secondary-accent);  
+  }
+  .footer-contact{
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.6); 
+  }
+  
+  .footer-li:hover  .footer-contact, .footer-li:hover  .footer-adress {
+    
+    color: var(--color-accent); 
+    transition: color var(--sec) var(--cubic);
+    }
+  
