@@ -6,6 +6,9 @@
   }
   .portfolio-menu-li{
     margin-right: 8px;
+    display: flex;
+    font-weight: 500;
+    align-items: center;
   
   }
   .portfolio-menu-li:last-child{
@@ -13,7 +16,7 @@
   }
   .portfolio-block-li{
     
-    flex-basis: calc((100% - 32px * 2)/3);
+    flex-basis: calc( ( 100% - 32px * 2  ) / 3 ) ;
   margin-right: 30px;
   margin-bottom: 30px;
   background: #FFFFFF;
