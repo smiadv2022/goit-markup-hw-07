@@ -6,7 +6,26 @@
      justify-items: center; 
       ne: 2px solid blue;
    } */
-   .job-item{
+
+    .job__title{
+    /* display:inline-block; */
+      font-weight: 700;
+   font-size: 36px;
+   line-height: 1.17;
+   color: var(--color-primary);
+   margin-bottom: 50px;
+   
+     text-align: center;
+     /* justify-items: center;
+     justify-content: center;
+     margin-left:  auto; 
+     margin-right: auto; */
+   } 
+    .job__list{
+     display: flex;
+    }
+
+   .job__item{
      position: relative;
    flex-basis: calc(( 100% - 30px * 2 ) / 3 );
    margin-right: 30px;
@@ -40,20 +59,4 @@
    .job-item:last-child{
      margin-right: 0;
    }
-   .job-block{
-     display: flex;
-    }
-   .job-title{
-    /* display:inline-block; */
-      font-weight: 700;
-   font-size: 36px;
-   line-height: 1.17;
-   color: var(--color-primary);
-   margin-bottom: 50px;
-   
-     text-align: center;
-     /* justify-items: center;
-     justify-content: center;
-     margin-left:  auto; 
-     margin-right: auto; */
-   }
+ 
