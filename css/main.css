@@ -281,8 +281,11 @@ p, h1, h2, h3, ul, li {
   margin-right: 30px;
   /* outline: 2px solid red; */
 }
+.job__item:last-child {
+  margin-right: 0;
+}
 
-.job-item-detale {
+.job__subscript {
   display: block;
   position: absolute;
   bottom: 0;
@@ -302,10 +305,6 @@ p, h1, h2, h3, ul, li {
   color: #FFFFFF;
   /* outline: 2px solid red; */
   background-color: rgba(47, 48, 58, 0.8);
-}
-
-.job-item:last-child {
-  margin-right: 0;
 }
 
 .feature {

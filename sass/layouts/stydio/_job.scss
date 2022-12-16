@@ -30,8 +30,11 @@
    flex-basis: calc(( 100% - 30px * 2 ) / 3 );
    margin-right: 30px;
    /* outline: 2px solid red; */
+   &:last-child{
+    margin-right: 0;
+  }
    }
-   .job-item-detale{
+   .job__subscript{
      display:block;
      position: absolute;
    bottom: 0;
@@ -56,7 +59,4 @@
     background-color:  rgba(47, 48, 58, 0.8);
    
    }
-   .job-item:last-child{
-     margin-right: 0;
-   }
- 
+  
