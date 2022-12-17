@@ -451,7 +451,7 @@ p, h1, h2, h3, ul, li {
   padding-bottom: 94px;
 }
 
-.client-title {
+.clients__title {
   text-align: center;
   font-weight: 700;
   font-size: 36px;
@@ -462,10 +462,11 @@ p, h1, h2, h3, ul, li {
   color: #212121;
 }
 
-.client {
+.clients__list {
   display: flex;
 }
-.client .item {
+
+.clients__item {
   display: flex;
   flex-basis: calc((100% - 160px) / 6);
   height: 92px;
@@ -477,19 +478,19 @@ p, h1, h2, h3, ul, li {
   justify-content: center;
   align-items: center;
   /* fill: #AFB1B8;
-  outline: 2px red solid; */
+       outline: 2px red solid; */
 }
-.client .item:hover .client-link, .client .item:focus .client-link {
+.clients__item:hover .cliens__link, .clients__item:focus .clients__link {
   fill: #2196F3;
   border: 1px solid #2196F3;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.client .item:nth-child(6n) {
+.clients__item:nth-child(6n) {
   margin-right: 0;
 }
 
-.client-link {
+.clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -500,21 +501,48 @@ p, h1, h2, h3, ul, li {
   fill: #AFB1B8;
   transition: fill var(--sec) var(--cubic), border var(--sec) var(--cubic), drop-shadow var(--sec) var(--cubic);
 }
-.client-link:hover, .client-link:focus {
+.clients__link:hover, .clients__link:focus {
   fill: #2196F3;
   border: 1px solid #2196F3;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.email-form {
+.emailsend {
   /* display: flex; */
   width: 570px;
   margin-top: 72px;
   margin-left: 93px;
 }
 
-.btn-email-form {
+.emailsend__title {
+  font-weight: 700;
+  margin-top: 0;
+  text-align: start;
+  line-height: 1.1428571429;
+  text-transform: uppercase;
+  color: var(--color-secondary-accent);
+  margin-bottom: 20px;
+}
+
+.emailsend__form {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.emailsend__input {
+  height: 50px;
+  width: 358px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: transparent;
+  padding-left: 16px;
+  margin-right: 12px;
+}
+
+.emailsend__btn {
   margin: 0;
   width: 200px;
   height: 50px;
@@ -532,48 +560,24 @@ p, h1, h2, h3, ul, li {
   text-align: center;
   letter-spacing: 0.06em;
 }
-
-.email-form-title {
-  font-weight: 700;
-  margin-top: 0;
-  text-align: start;
-  line-height: 1.1428571429;
-  text-transform: uppercase;
-  color: var(--color-secondary-accent);
-  margin-bottom: 20px;
+.emailsend__btn:hover .emailsend__icon, .emailsend__btn:hover {
+  fill: var(--color-secondary);
+  color: var(--color-secondary);
 }
 
-.email-input {
-  height: 50px;
-  width: 358px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  background-color: transparent;
-  padding-left: 16px;
-  margin-right: 12px;
-}
-
-.email-form-box {
-  display: flex;
-  justify-items: center;
-  align-items: center;
-}
-
-.send-icon {
+.emailsend__icon {
   fill: var(--color-secondary-accent);
   margin-left: 10px;
 }
 
-.social {
+.footerlink {
   margin-bottom: 99px;
   /* padding-right: 100px; */
   margin-top: 72px;
   margin-left: 70px;
   /* outline: 2px red solid; */
 }
-
-.social p {
+.footerlink p {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -583,25 +587,28 @@ p, h1, h2, h3, ul, li {
   margin-bottom: 20px;
 }
 
-.social-list {
+.footerlink__list {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.social-icon {
+.footerlink__item {
   height: 44px;
   width: 44px;
   /* outline: 2px red solid; */
   margin-right: 10px;
+  border-radius: 50%;
   /* border-radius: 50%; */
 }
-
-.social-icon:last-child {
+.footerlink__item:last-child {
   margin-right: 0;
 }
+.footerlink__item:hover {
+  background-color: #2196F3;
+}
 
-.social-link {
+.footerlink__icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -613,33 +620,37 @@ p, h1, h2, h3, ul, li {
   transition: background-color var(--sec) var(--cubic);
 }
 
-.social-link:hover {
-  background-color: #2196F3;
+.footer__item {
+  transition: color var(--sec) var(--cubic);
 }
-
-.footer-li:not(:last-child) {
+.footer__item:not(:last-child) {
   margin-bottom: 12px;
   /* outline: 2px red solid; */
 }
-
-.footer-li:last-child {
+.footer__item:last-child {
   margin-bottom: 60px;
 }
+.footer__item:hover, .footer__item:focus {
+  color: var(--color-accent);
+}
 
-.footer-adress {
+.footer__adress {
   font-style: normal;
   line-height: 1.71;
   color: var(--color-secondary-accent);
+  transition: color var(--sec) var(--cubic);
+}
+.footer__adress:hover {
+  color: var(--color-accent);
 }
 
-.footer-contact {
+.footer__contact {
   line-height: 1.75;
   color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-li:hover .footer-contact, .footer-li:hover .footer-adress {
-  color: var(--color-accent);
   transition: color var(--sec) var(--cubic);
+}
+.footer__contact:hover {
+  color: var(--color-accent);
 }
 
 .footer {
@@ -649,22 +660,33 @@ p, h1, h2, h3, ul, li {
   padding-top: 60px; */
   max-width: 1600px;
   margin: 0 auto;
+  display: flex;
 }
 
-.footer-logo {
-  display: inline-block;
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  color: var(--color-secondary-accent);
+.footer__logo {
   margin-top: 60px;
   margin-bottom: 28px;
+  color: var(--color-secondary-accent);
+  padding: 0;
 }
 
-.footer-s {
+.backdrop__btnclose {
   display: flex;
-  /* background-color: blue; */
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 8px;
+  right: 8px;
+  justify-content: center;
+  align-items: center;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+.backdrop__btncloseicon {
+  justify-items: center;
+  align-items: center;
 }
 
 .backdrop {
@@ -681,39 +703,24 @@ p, h1, h2, h3, ul, li {
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity var(--sec) var(--cubic);
 }
-
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
 }
-
-.backdrop.is-hidden .modal {
+.backdrop.is-hidden .backdrop__modal {
   opacity: 0;
   pointer-events: none;
   transform: translate(-50%, -50%) rotate(360deg) scale(0);
   transition: opacity var(--sec) var(--cubic), transform var(--sec) var(--cubic);
 }
-
-.btn-close {
-  display: flex;
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  top: 8px;
-  right: 8px;
+.backdrop form {
+  /* padding-left: 40px;
+  padding-right: 40px; */
   justify-content: center;
-  align-items: center;
-  background: #FFFFFF;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
+  text-align: center;
 }
 
-.btn-close-icon {
-  justify-items: center;
-  align-items: center;
-}
-
-.modal {
+.backdrop__modal {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -732,8 +739,7 @@ p, h1, h2, h3, ul, li {
   border-radius: 4px;
   transition: opacity var(--sec) var(--cubic), transform var(--sec) var(--cubic);
 }
-
-.modal p {
+.backdrop__modal p {
   font-weight: 700;
   font-size: 20px;
   line-height: 23px;
@@ -743,14 +749,7 @@ p, h1, h2, h3, ul, li {
   color: var(--color-primary);
 }
 
-form {
-  /* padding-left: 40px;
-  padding-right: 40px; */
-  justify-content: center;
-  text-align: center;
-}
-
-.modal-item {
+.backdrop__modalitem {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -760,8 +759,7 @@ form {
   min-height: 58px;
   text-align: left;
 }
-
-.modal-item input {
+.backdrop__modalitem input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 40px;
@@ -769,22 +767,18 @@ form {
   outline: none;
   transition: border var(--sec) var(--cubic);
 }
-
-.modal-item:hover input, .modal-item:focus input {
+.backdrop__modalitem:hover input, .backdrop__modalitem:focus input {
   border: 1px solid #2196F3;
   border-radius: 4px;
   /* outline: none; */
 }
-
-.modal-item svg {
+.backdrop__modalitem svg {
   transition: fill var(--sec) var(--cubic);
 }
-
-.modal-item:hover svg, .modal-item:focus svg {
+.backdrop__modalitem:hover svg, .backdrop__modalitem:focus svg {
   fill: var(--color-accent);
 }
-
-.modal-item label {
+.backdrop__modalitem label {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -794,7 +788,7 @@ form {
   /* margin-bottom: 4px; */
 }
 
-.modal-icon {
+.backdrop__icon {
   position: absolute;
   padding: 0;
   top: 50%;
@@ -802,7 +796,7 @@ form {
   left: 12px;
 }
 
-.modal textarea {
+.backdrop__modal textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 12px 16px;
@@ -812,11 +806,11 @@ form {
   outline: none;
 }
 
-.modal textarea:hover {
+.backdrop__modal textarea:hover {
   border: 1px solid var(--color-accent);
 }
 
-.modal-agree {
+.backdrop__agree {
   display: flex;
   width: 100%;
   /* justify-content: center; */
@@ -833,7 +827,7 @@ form {
   color: #757575;
 }
 
-.checkbox {
+.backdrop__checkbox {
   display: block;
   width: 1px;
   height: 1px;
@@ -844,7 +838,7 @@ form {
   margin: 0;
 }
 
-.modal-agree-spanbox {
+.backdrop__newchek {
   display: flex;
   width: 16px;
   height: 15px;
@@ -859,7 +853,7 @@ form {
   border: 2px solid var(--color-primary);
 }
 
-.modal-agree .clabel {
+.backdrop__labelagree {
   padding: 0;
   margin: 0;
   display: flex;
@@ -873,37 +867,27 @@ form {
   fill: transparent;
 }
 
-.checkbox:checked + label > span svg {
+.backdrop__checkbox:checked + label > span svg {
   fill: var(--color-secondary-accent);
 }
 
-.checkbox:checked + label > span {
+.backdrop__checkbox:checked + label > span {
   background-color: var(--color-accent);
   border: 2px solid var(--color-accent);
 }
 
-.btn-modal-send {
+.backdrop__btnsend {
   width: 200px;
   height: 50px;
   padding: 10px 52px;
-  margin-left: auto;
-  margin-right: auto;
-  background: #188CE8;
   border: 0;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
   /* identical to box height, or 188% */
-  color: var(--color-secondary-accent);
   text-align: center;
-  letter-spacing: 0.06em;
   margin-top: 30px;
   margin-bottom: 40px;
 }
 
-.text-agree {
+.backdrop__textagree {
   display: inline-block;
   font-size: 14px;
   line-height: 1.71;
