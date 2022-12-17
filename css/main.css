@@ -1007,7 +1007,7 @@ p, h1, h2, h3, ul, li {
   /* or 156% */
   letter-spacing: 0.03em;
   color: var(--color-secondary-accent);
-  transform: translatey(100%);
+  transform: translatey(101%);
   transition: transform var(--sec) var(--cubic);
 }
 .cads__overflow:hover {
