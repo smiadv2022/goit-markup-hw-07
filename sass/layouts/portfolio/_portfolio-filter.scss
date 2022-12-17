@@ -10,7 +10,7 @@
 
 
 }
-.filter-item{
+.filter__item{
   margin-right: 8px;
   display: flex;
   font-weight: 500;
@@ -20,14 +20,14 @@
 }
 }
 
-.filter-btns{
+.filter__list{
 display:flex;
 margin-left: auto;
 margin-right: auto;
 justify-content: center;
 padding: 0;
 }
-.filter-btn{
+.filter__btn{
 font-weight: 500;
 font-size: 16px;
 line-height: 1.62;

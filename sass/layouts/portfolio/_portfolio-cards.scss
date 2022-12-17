@@ -5,7 +5,7 @@
     padding-bottom: 94px;
   }
   
-  .cards-item{
+  .cards__item{
     
     flex-basis: calc( ( 100% - 32px * 2  ) / 3 ) ;
   margin-right: 30px;
@@ -32,13 +32,13 @@
   }
 }
 
-  .cards-tumb{
+  .cards__tumb{
     display: flex;
     position: relative;
     /* width: calc( ( 100% - 2px ) / 1); */
     overflow: hidden;
 
-   &:hover .tumb-overflow {
+   &:hover .cads__overflow {
     transform: translatey(0);
     transition:transform  var(--sec) var(--cubic);
   
@@ -46,7 +46,7 @@
   }
 
   
-  .tumb-overflow{
+  .cads__overflow{
     position:absolute;
     /* display: block; */
     text-align: left;
@@ -78,14 +78,14 @@
   
   
 
-  .cards-index{
+  .cards__index{
   font-size: 16px;
   line-height: 1.88;
   margin-bottom: 20px;
   margin-left: 24px;
   color: var(--color-secondary);
   }
-  .cards-title{
+  .cards__title{
    font-weight: 700;
   font-size: 18px;
   line-height: 2;
